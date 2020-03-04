@@ -8,9 +8,66 @@
   transition: all .2s ease-in-out;
 
   .section-hero {
-    padding: 40px 0;
+    padding-bottom: 40px;
 
     text-align: center;
+
+    background-color: $brand-color;
+  }
+
+  .hero-title {
+    margin: 0;
+
+    font-size: 46px;
+    color: #fff;
+  }
+
+  .hero-subtitle {
+    font-size: $content-font-size;
+    color: #fff;
+    .hero-position {
+      font-size: 28px;
+    }
+  }
+
+  .hero-content {
+    padding-top: 36px;
+    padding-bottom: 36px;
+
+    font-size: $content-font-size;
+    color: #fff;
+  }
+
+  .section-about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    text-align: center;
+
+    background-color: #f7f7f7;
+
+    .about-content {
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+      font-size: $content-font-size;
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .about-skills,
+    .about-social {
+      padding-top: 30px;
+      padding-right: 15px;
+      padding-bottom: 30px;
+      padding-left: 15px;
+
+      text-align: left;
+
+      background-color: #fff;
+    }
   }
 }
 

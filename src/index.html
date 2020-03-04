@@ -37,8 +37,9 @@
     <nav class="navbar navbar-expand-md">
       <div class="container">
         <a href="#" class="navbar-brand">Kevin</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -69,25 +70,103 @@
     </nav>
   </header>
 
- <main class="home">
+  <main id="home" class="home">
     <div class="section-hero">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h1>Kevin Petter</h1>
-            <div class="hero-title">
+            <h1 class="hero-title">Kevin Petter</h1>
+            <div class="hero-subtitle">
               <span>I am</span>
-              <span>Web Developer</span>
+              <span class="hero-position">Web Developer</span>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsa necessitatibus voluptate. Dolores sed neque, accusantium iusto inventore harum quibusdam, aspernatur, ullam vero ea eos ipsam tenetur dolore qui voluptatibus.</p>
-            <a href="#portfolio" class="ke-btn btn-white">VIEW MY WORK</a>
+            <p class="hero-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsa necessitatibus
+              voluptate. Dolores sed neque, accusantium iusto inventore harum quibusdam, aspernatur, ullam vero ea eos
+              ipsam tenetur dolore qui voluptatibus.</p>
+            <a href="#portfolio" class="ke-btn btn-white">View My Work</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div id="aboutus" class="section-about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="section-title">About Me</h2>
+            <div class="ke-divider"></div>
+            <p class="about-content">
+              My name is Kevin Petter. I am a professional <span>Web Designer</span> and <span>Web Developer</span>.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="about-profile"></div>
+            <img src="./assets/images/profile.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-12">
+            <div class="about-skills">
+              <h2>Skills</h2>
+
+              <div class="ke-skill">
+                <h3 class="ke-skill-title">Html5</h3>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+                    aria-valuemax="100">95%</div>
+                </div>
+              </div>
+
+              <div class="ke-skill">
+                <h3 class="ke-skill-title">css</h3>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+                    aria-valuemax="100">90%</div>
+                </div>
+              </div>
+
+              <div class="ke-skill">
+                <h3 class="ke-skill-title">Photoshop</h3>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                    aria-valuemax="100">85%</div>
+                </div>
+              </div>
+
+              <div class="ke-skill">
+                <h3 class="ke-skill-title">Wordpress</h3>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+                    aria-valuemax="100">80%</div>
+                </div>
+              </div>
+
+              <div class="ke-skill">
+                <h3 class="ke-skill-title">JQuery</h3>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0"
+                    aria-valuemax="100">55%</div>
+                </div>
+              </div>
+
+
+
+
+
+            </div>
+            <div class="about-social">
+              <h2>Social</h2>
+              <div class="about-social-icons"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </main>
-  
+
   <!-- build:js scripts/main.min.js -->
   <script src="./scripts/vendors/jquery.min.js"></script>
   <script src="./scripts/vendors/tether.min.js"></script>
@@ -97,7 +176,7 @@
   <script src="./scripts/modules/theme-module.js"></script>
   <script src="./scripts/bootstrapper.js"></script>
   <!-- endbuild -->
-  
+
   <!--[if lte IE 9]>
     <script src="javascripts/non-responsive.js"></script>
   <![endif]-->

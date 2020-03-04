@@ -1,18 +1,12 @@
 //main: ../main.scss
 
 // -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
+// This file contains all styles related to the divider component.
 // -----------------------------------------------------------------------------
-
-.navbar {
-  padding: 1rem 1.5rem;
+.ke-divider {
+  margin: 0 auto;
+  width: 70px;
+  height: 3px;
 
   background-color: $brand-color;
-  .navbar-brand {
-    color: #fff;
-  }
-
-  .nav-link {
-    color: #fff;
-  }
 }

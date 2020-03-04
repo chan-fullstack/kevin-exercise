@@ -5,16 +5,19 @@
 // -----------------------------------------------------------------------------
 .ke-btn {
   display: inline-block;
-  padding: 15px 32px;
+  padding: 12px;
   margin: 4px 2px;
 
-  font-size: 15px;
+  font-size: 12px;
+  letter-spacing: 1px;
   color: white;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
 
   background-color: transparent;
   border: 2px solid white;
+  border-radius: 4px;
 
   cursor: pointer;
 }
