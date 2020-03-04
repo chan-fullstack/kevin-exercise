@@ -3,3 +3,19 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.ke-btn {
+  display: inline-block;
+  padding: 15px 32px;
+  margin: 4px 2px;
+
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: transparent;
+  border: 2px solid white;
+
+  cursor: pointer;
+}
+

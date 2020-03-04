@@ -3,3 +3,16 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+.navbar {
+  padding: 1rem 1.5rem;
+
+  background-color: $brand-color;
+  .navbar-brand {
+    color: #fff;
+  }
+
+  .navbar-item {
+    color: #fff;
+  }
+}

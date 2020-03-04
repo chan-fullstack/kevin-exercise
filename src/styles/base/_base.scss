@@ -8,23 +8,25 @@
  * Basic styles for links
  */
 a {
-  color: $brand-color;
+  color: $header-text-color;
   text-decoration: none;
 
-  @include on-event {
-    color: $text-color;
+@include on-event {
+    color: $brand-color;
     text-decoration: underline;
   }
 }
 
-.btn,
+.ke-btn,
 a {
-  transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
+          transition: all .2s ease-in-out;
 
-  @include on-event {
+  -webkit-transition: all .2s ease-in-out;
+
+@include on-event {
     outline: 0;
-    @include boxshadow(none);
+
+@include boxshadow(none);
   }
 }
 
@@ -34,36 +36,41 @@ a {
 input[type="email"],
 input[type="password"],
 input[type="text"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  -webkit-focus-ring-color: none;
   outline: none;
 
-  @include on-event {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-focus-ring-color: none;
+
+@include on-event {
     @include boxshadow(none);
   }
 }
 
-//styles for navbar-toggler
+// //styles for navbar-toggler
 .navbar-toggler {
   padding: 10px 0;
 
   border: 0;
   border-radius: 0;
 
+@include on-event() {
+    outline: 0;
+  }
+
   .icon-bar {
     display: block;
-    height: 4px;
     width: 29px;
+    height: 4px;
 
-    background: #000;
+    background: #fff;
 
-    @include transition(0.5s cubic-bezier(0.65, 0.05, 0.36, 1));
+@include transition(.5s cubic-bezier(.65, .05, .36, 1));
 
-    @include boxshadow(none);
+@include boxshadow(none);
 
-    &+.icon-bar {
+    & + .icon-bar {
       margin-top: 4px;
     }
   }
@@ -82,9 +89,5 @@ input[type="text"] {
         @include transform(rotate(-225deg) translate(-6px, 6px));
       }
     }
-  }
-
-  @include on-event() {
-    outline: 0;
   }
 }
