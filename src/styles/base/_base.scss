@@ -17,7 +17,7 @@ a {
   }
 }
 
-.ke-btn,
+.btn,
 a {
           transition: all .2s ease-in-out;
 
@@ -28,6 +28,30 @@ a {
 
 @include boxshadow(none);
   }
+}
+
+.ke-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  text-align: center;
+}
+
+.ke-icon {
+  position: relative;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+
+  font-size: 14px;
+  color: $brand-color;
+
+  background-color: transparent;
+  border: 2px solid $brand-color;
+  border-radius: 50%;
 }
 
 /**

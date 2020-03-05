@@ -3,22 +3,26 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
-.ke-btn {
-  display: inline-block;
-  padding: 12px;
-  margin: 4px 2px;
+.btn {
+  padding: 10px 12px;
 
   font-size: 12px;
   letter-spacing: 1px;
-  color: white;
-  text-align: center;
-  text-decoration: none;
   text-transform: uppercase;
 
-  background-color: transparent;
-  border: 2px solid white;
-  border-radius: 4px;
+  border: 2px solid transparent;
+}
 
-  cursor: pointer;
+
+.ke-btn-white {
+  @include button-color(#fff);
+}
+
+.ke-btn-green {
+  @include button-color($brand-color);
+}
+
+.ke-btn-grey {
+  @include button-color(#6d6d6d);
 }
 

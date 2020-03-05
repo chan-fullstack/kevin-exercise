@@ -1,0 +1,36 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the ke card component.
+// -----------------------------------------------------------------------------
+
+.ke-card {
+  padding: 20px;
+
+  background-color: $light-grey;
+
+  .card-icon {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    i {
+      padding: 22px;
+
+      font-size: 24px;
+
+      // @include icon-style($brand-color);
+    }
+  }
+
+  .card-title {
+    padding-top: 12px;
+
+    font-weight: bolder;
+  }
+
+  .card-content {
+    padding-top: 5px;
+    padding-bottom: 8px;
+
+    font-size: 14px;
+  }
+}

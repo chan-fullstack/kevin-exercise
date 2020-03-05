@@ -7,7 +7,7 @@
 .home {
   transition: all .2s ease-in-out;
 
-  .section-hero {
+  .hero {
     padding-bottom: 40px;
 
     text-align: center;
@@ -38,36 +38,61 @@
     color: #fff;
   }
 
-  .section-about {
-    padding-top: 80px;
-    padding-bottom: 80px;
-
-    text-align: center;
-
+  .about {
     background-color: #f7f7f7;
 
-    .about-content {
-      padding-top: 30px;
-      padding-bottom: 30px;
-
-      font-size: $content-font-size;
-
+    .description-text {
       span {
         font-weight: bold;
       }
     }
 
-    .about-skills,
-    .about-social {
-      padding-top: 30px;
-      padding-right: 15px;
-      padding-bottom: 30px;
-      padding-left: 15px;
-
-      text-align: left;
-
-      background-color: #fff;
+    .about-skills {
+      padding-top: 8px;
     }
+
+    .about-social {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    .about-social-icons {
+      padding-left: 4px;
+      .ke-icon {
+        margin-right: 10px;
+      }
+    }
+
+    .about-button {
+      .btn {
+        padding-right: 14px;
+        padding-left: 14px;
+
+        font-size: 14px;
+        font-weight: bolder;
+        text-transform: none;
+
+        border-radius: 0;
+      }
+    }
+
+    .about-skills,
+    .about-social,
+    .about-button {
+      text-align: left;
+      h2 {
+        font-size: 26px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .services {
+    background-color: #fff;
+  }
+
+  .portfolio {
+    background-color: #f7f7f7;
   }
 }
 

@@ -1,0 +1,31 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the section_intro component.
+// -----------------------------------------------------------------------------
+
+.description {
+  .description-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: $header-text-color;
+    text-transform: uppercase;
+  }
+
+  .description-divider {
+    margin: 0 auto;
+    width: 70px;
+    height: 3px;
+
+    background-color: $brand-color;
+  }
+
+  .description-text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    font-size: $content-font-size;
+  }
+}
+
+
