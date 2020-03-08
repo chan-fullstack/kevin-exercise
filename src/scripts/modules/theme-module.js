@@ -1,25 +1,34 @@
-AppName.Modules.ThemeModule = (function() {
+AppName.Modules.ThemeModule = (function () {
   //Dependencies
   var core = AppName.Core;
 
   //////////////////////
   // Private Methods //
   ////////////////////
-  var _privateMethod = function() {
+  var _initSwipers = function() {
     // private stuff
 
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.testimonials-slider', {
       pagination: {
         el: '.swiper-pagination',
       },
     });
+
+
   };
+
+  // var _changeNavbarBackground = function () {
+  //   $('.navbar-toggler').on('click', function () {
+  //     $('.navbar').toggleClass('ke-navbar-open');
+  //   });
+  // }
 
   /////////////////////
   // Public Methods //
   ///////////////////
-  var init = function() {
-    _privateMethod();
+  var init = function () {
+    _initSwipers();
+    // _changeNavbarBackground();
   };
 
   return {

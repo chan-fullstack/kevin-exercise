@@ -1,0 +1,27 @@
+.ke-icon {
+  position: relative;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+
+  font-size: 14px;
+  color: $brand-color;
+
+  border-width: 2px;
+  border-color: $brand-color;
+  border-style: solid;
+  border-radius: 50%;
+
+  &-outline {
+    background-color: transparent;
+  }
+
+  &-solid {
+    color: #fff;
+
+    background-color: $brand-color;
+  }
+}

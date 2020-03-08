@@ -6,28 +6,33 @@
 
 .ke-card {
   padding: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+// margin-bottom: 24px;
 
   background-color: $light-grey;
 
-  .card-icon {
+  &-icon {
     padding-top: 4px;
     padding-bottom: 4px;
-    i {
-      padding: 22px;
 
-      font-size: 24px;
+    .ke-icon {
+      width: 72px;
+      height: 72px;
 
-      // @include icon-style($brand-color);
+      font-size: 26px;
     }
   }
 
-  .card-title {
+  &-title {
     padding-top: 12px;
+    padding-bottom: 12px;
 
     font-weight: bolder;
   }
 
-  .card-content {
+  &-content {
     padding-top: 5px;
     padding-bottom: 8px;
 

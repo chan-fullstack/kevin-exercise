@@ -5,26 +5,28 @@
 // -----------------------------------------------------------------------------
 
 .description {
-  .description-title {
-    font-size: 24px;
+  &-title {
+    margin-bottom: 10px;
+
+    font-size: 25px;
     font-weight: bold;
     color: $header-text-color;
     text-transform: uppercase;
   }
 
-  .description-divider {
-    margin: 0 auto;
-    width: 70px;
+  &-divider {
+    margin: 10px auto;
+    width: 73px;
     height: 3px;
 
     background-color: $brand-color;
   }
 
-  .description-text {
-    padding-top: 30px;
-    padding-bottom: 30px;
+  &-text {
+    padding: 12px;
 
     font-size: $content-font-size;
+    line-height: 1.5;
   }
 }
 

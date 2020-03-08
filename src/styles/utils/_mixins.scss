@@ -219,14 +219,3 @@
     border-color: $colorname;
   }
 }
-
-@mixin icon-style($iconcolor, $iconsize, $issolid: false) {
-  width: $iconsize;
-  height: $iconsize;
-
-  color: $iconcolor;
-
-  background-color: transparent;
-  border: 2px solid $iconcolor;
-  border-radius: 50%;
-}

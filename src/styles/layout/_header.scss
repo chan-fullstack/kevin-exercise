@@ -5,14 +5,21 @@
 // -----------------------------------------------------------------------------
 
 .navbar {
-  padding: 1rem 1.5rem;
+  padding: 10px 28px;
 
   background-color: $brand-color;
-  .navbar-brand {
+  &-brand {
     color: #fff;
+    .ke-logo {
+      height: 18px;
+    }
   }
 
   .nav-link {
     color: #fff;
   }
+}
+
+.ke-navbar-open {
+  background-color: #2d8686;
 }

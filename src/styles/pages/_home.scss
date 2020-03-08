@@ -8,38 +8,49 @@
   transition: all .2s ease-in-out;
 
   .hero {
-    padding-bottom: 40px;
+    padding-bottom: 66px;
 
     text-align: center;
 
     background-color: $brand-color;
-  }
 
-  .hero-title {
-    margin: 0;
+    &-title {
+      margin: 0;
 
-    font-size: 46px;
-    color: #fff;
-  }
-
-  .hero-subtitle {
-    font-size: $content-font-size;
-    color: #fff;
-    .hero-position {
-      font-size: 28px;
+      font-size: 42px;
+      line-height: 1.1;
+      color: #fff;
     }
-  }
 
-  .hero-content {
-    padding-top: 36px;
-    padding-bottom: 36px;
+    &-subtitle {
+      font-size: $content-font-size;
+      color: #fff;
+      &-position {
+        font-size: 31px;
+      }
+    }
 
-    font-size: $content-font-size;
-    color: #fff;
+    &-content {
+      padding-top: 24px;
+      padding-right: 15px;
+      padding-bottom: 24px;
+      padding-left: 15px;
+
+      font-size: 15px;
+      color: #fff;
+    }
+
+    .btn {
+      margin-top: 16px;
+    }
   }
 
   .about {
     background-color: #f7f7f7;
+
+    .description {
+      padding-bottom: 48px;
+    }
 
     .description-text {
       span {
@@ -57,6 +68,7 @@
     }
 
     .about-social-icons {
+      padding-top: 6px;
       padding-left: 4px;
       .ke-icon {
         margin-right: 10px;
@@ -64,7 +76,8 @@
     }
 
     .about-button {
-      .btn {
+      margin-top: 18px;
+      .ke-btn {
         padding-right: 14px;
         padding-left: 14px;
 
@@ -89,10 +102,108 @@
 
   .services {
     background-color: #fff;
+    .description {
+      padding-bottom: 50px;
+    }
   }
 
   .portfolio {
     background-color: #f7f7f7;
+
+    .description {
+      padding-bottom: 12px;
+    }
+
+    .portfolio-wrapper {
+      display: flex;
+      padding-bottom: 12px;
+
+      flex-flow: row wrap;
+    }
+
+    .portfolio-holder {
+      padding: 15px;
+
+      flex: 0 50%;
+    }
+  }
+
+  .testimonials {
+    position: relative;
+
+    background-image: url("../../assets/images/testimonials-bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &.ke-section {
+      padding-top: 142px;
+      padding-bottom: 150px;
+    }
+    .description-title {
+      color: #fff;
+      text-transform: unset;
+    }
+
+    .testimonial-holder {
+      padding-top: 72px;
+      padding-right: 34px;
+      padding-bottom: 84px;
+      padding-left: 34px;
+    }
+
+    .testimonial-icon {
+      .ke-icon {
+        width: 40px;
+        height: 40px;
+
+        font-size: 15px;
+        color: #fff;
+
+        border-color: #bababa;
+      }
+    }
+
+    .testimonial-message {
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      font-size: 17px;
+      color: #bababa;
+    }
+
+    .testimonial-author {
+      padding-top: 8px;
+
+      color: #fff;
+    }
+
+    .author-name {
+      font-weight: bolder;
+      text-transform: uppercase;
+    }
+
+    .author-position {
+      margin-top: 6px;
+
+      font-size: 15px;
+      color: #bababa;
+    }
+
+    &:after {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+
+      background-color: #000;
+
+      opacity: .76;
+    }
   }
 }
 

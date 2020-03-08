@@ -17,7 +17,7 @@ a {
   }
 }
 
-.btn,
+.ke-btn,
 a {
           transition: all .2s ease-in-out;
 
@@ -31,28 +31,31 @@ a {
 }
 
 .ke-section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 
   text-align: center;
 }
 
-.ke-icon {
-  position: relative;
-
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 34px;
-  height: 34px;
-
-  font-size: 14px;
-  color: $brand-color;
-
-  background-color: transparent;
-  border: 2px solid $brand-color;
-  border-radius: 50%;
+.ke-container {
+  max-width: 100%;
 }
+
+.swiper-pagination {
+  & > .swiper-pagination-bullet {
+    margin: 0 14px !important;
+    width: 10px;
+    height: 10px;
+
+    background: #fff;
+
+    opacity: 1;
+  }
+  & > .swiper-pagination-bullet-active {
+    background: $brand-color;
+  }
+}
+
 
 /**
  * Basic styles for input fields
