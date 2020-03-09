@@ -22,7 +22,7 @@
   }
 
   &-grey {
-    @include button-color(#6d6d6d);
+    @include button-color($mid-grey);
   }
 }
 

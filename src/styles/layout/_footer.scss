@@ -3,3 +3,18 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+.ke-footer {
+  display: flex;
+  align-items: center;
+  height: 80px;
+
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: center;
+
+  background-color: $light-grey;
+
+  a {
+    font-weight: bold;
+  }
+}

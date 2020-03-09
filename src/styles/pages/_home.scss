@@ -70,13 +70,28 @@
     .about-social-icons {
       padding-top: 6px;
       padding-left: 4px;
+
       .ke-icon {
         margin-right: 10px;
+
+        color: $header-text-color;
+
+        border-width: 1px;
+        border-color: $header-text-color;
+
+        cursor: pointer;
+
+        &:hover {
+          color: #fff;
+
+          background-color: $header-text-color;
+        }
       }
     }
 
     .about-button {
       margin-top: 18px;
+
       .ke-btn {
         padding-right: 14px;
         padding-left: 14px;
@@ -93,6 +108,7 @@
     .about-social,
     .about-button {
       text-align: left;
+
       h2 {
         font-size: 26px;
         font-weight: bold;
@@ -101,30 +117,44 @@
   }
 
   .services {
+    padding-bottom: 86px;
+
     background-color: #fff;
     .description {
-      padding-bottom: 50px;
+      padding-bottom: 64px;
     }
   }
 
   .portfolio {
+    padding-bottom: 68px;
+
     background-color: #f7f7f7;
 
     .description {
-      padding-bottom: 12px;
+      padding-bottom: 26px;
     }
 
     .portfolio-wrapper {
       display: flex;
+      padding-right: 15px;
       padding-bottom: 12px;
+      padding-left: 15px;
 
       flex-flow: row wrap;
     }
 
     .portfolio-holder {
-      padding: 15px;
+      margin-bottom: 42px;
 
       flex: 0 50%;
+
+      &:nth-child(odd) {
+        padding-right: 20px;
+      }
+
+      &:nth-child(even) {
+        padding-left: 20px;
+      }
     }
   }
 
@@ -140,6 +170,12 @@
       padding-top: 142px;
       padding-bottom: 150px;
     }
+
+    .description {
+      position: relative;
+      z-index: 1;
+    }
+
     .description-title {
       color: #fff;
       text-transform: unset;
@@ -205,29 +241,53 @@
       opacity: .76;
     }
   }
+
+  .contact {
+    padding-bottom: 45px;
+
+    .description {
+      padding-bottom: 40px;
+    }
+
+    .ke-card {
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-top: 0;
+      margin-bottom: 12px;
+
+      background-color: #fff;
+    }
+
+    .ke-card-content {
+      padding-top: 12px;
+      padding-right: 32px;
+      padding-left: 32px;
+
+      font-size: 15px;
+    }
+
+    .ke-icon {
+      width: 68px;
+      height: 68px;
+
+      font-size: 22px;
+    }
+
+    .contact-form {
+      padding-top: 50px;
+      padding-right: 50px;
+      padding-bottom: 50px;
+      padding-left: 50px;
+    }
+
+    .ke-btn {
+      padding-top: 14px;
+      padding-bottom: 14px;
+      width: 100%;
+
+      font-weight: bold;
+
+      border-width: 1px;
+    }
+  }
 }
-
-
-// .swiper-container {
-//   margin-top: 40px;
-//   width: 500px;
-//   height: 300px;
-//   overflow: hidden;
-
-//   border: 2px #007aff solid;
-//   border-radius: 3px;
-// }
-
-// .swiper-slide {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-
-//   font-size: 18px;
-//   text-align: center;
-
-//   background: #ffffff;
-// }
-
-
-

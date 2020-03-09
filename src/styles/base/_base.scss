@@ -62,7 +62,18 @@ a {
  */
 input[type="email"],
 input[type="password"],
-input[type="text"] {
+input[type="text"],
+textarea {
+  padding: 12px;
+  margin-bottom: 24px;
+  width: 100%;
+
+  font-size: 14px;
+
+  border-width: 1px;
+  border-color: $mid-grey;
+  border-style: solid;
+  border-radius: 4px;
   outline: none;
 
   -webkit-appearance: none;
@@ -70,9 +81,19 @@ input[type="text"] {
           appearance: none;
   -webkit-focus-ring-color: none;
 
-@include on-event {
-    @include boxshadow(none);
+@include placeholder() {
+    opacity: .8;
   }
+
+  // @include on-event {
+  //     @include boxshadow(none);
+  //   }
+}
+
+textarea {
+  padding: 10px;
+
+  font-size: 16px;
 }
 
 // //styles for navbar-toggler
