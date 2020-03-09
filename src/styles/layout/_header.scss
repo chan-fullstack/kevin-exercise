@@ -7,6 +7,9 @@
 .navbar {
   padding: 10px 28px;
 
+  font-size: 14px;
+  text-transform: uppercase;
+
   background-color: $brand-color;
   &-brand {
     color: #fff;
@@ -22,4 +25,10 @@
 
 .ke-navbar-open {
   background-color: #2d8686;
+}
+
+@include respond-to("sm-up") {
+  .navbar {
+    padding: 28px 28px;
+  }
 }
