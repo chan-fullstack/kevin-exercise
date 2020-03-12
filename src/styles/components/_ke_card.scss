@@ -5,7 +5,10 @@
 // -----------------------------------------------------------------------------
 
 .ke-card {
-  padding: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
   margin-bottom: 28px;
 
   background-color: $light-grey;
@@ -33,5 +36,26 @@
     padding-bottom: 8px;
 
     font-size: 14px;
+  }
+}
+
+@include respond-to(md-up) {
+  .ke-card {
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+
+    &-icon {
+      .ke-icon {
+        width: 77px;
+        height: 77px;
+      }
+    }
+
+    &-content {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
   }
 }

@@ -139,3 +139,16 @@ textarea {
     }
   }
 }
+
+@include respond-to(md-up) {
+  .ke-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .swiper-pagination {
+    & > .swiper-pagination-bullet {
+      margin: 0 6px !important;
+    }
+  }
+}

@@ -58,16 +58,16 @@
       }
     }
 
-    .about-skills {
+    &-skills {
       padding-top: 8px;
     }
 
-    .about-social {
+    &-social {
       padding-top: 16px;
       padding-bottom: 16px;
     }
 
-    .about-social-icons {
+    &-social-icons {
       padding-top: 6px;
       padding-left: 4px;
 
@@ -89,7 +89,7 @@
       }
     }
 
-    .about-button {
+    &-button {
       margin-top: 18px;
 
       .ke-btn {
@@ -144,17 +144,16 @@
     }
 
     .portfolio-holder {
+      flex-basis: (100/2) * 1%;
       margin-bottom: 42px;
 
-      flex: 0 50%;
+      // &:nth-child(odd) {
+      //   padding-right: 20px;
+      // }
 
-      &:nth-child(odd) {
-        padding-right: 20px;
-      }
-
-      &:nth-child(even) {
-        padding-left: 20px;
-      }
+      // &:nth-child(even) {
+      //   padding-left: 20px;
+      // }
     }
   }
 
@@ -205,7 +204,7 @@
       padding-bottom: 20px;
 
       font-size: 17px;
-      color: #bababa;
+      color: #fff;
     }
 
     .testimonial-author {
@@ -223,7 +222,7 @@
       margin-top: 6px;
 
       font-size: 15px;
-      color: #bababa;
+      color: #fff;
     }
 
     &:after {
@@ -293,33 +292,168 @@
 }
 
 
-@include respond-to(sm-up) {
+@include respond-to(md-up) {
   .home {
-    .portfolio {
-      .portfolio-holder {
+    .hero {
+      padding-top: 214px;
+      padding-bottom: 318px;
+
+      &-title {
+        font-size: 60px;
+        font-weight: bold;
+      }
+
+      &-subtitle {
+        font-size: 29px;
+        line-height: 46px;
+      }
+
+      &-content {
+        padding-right: 116px;
+        padding-left: 116px;
+      }
+
+      .ke-btn {
+        padding: 14px 36px;
+        margin-top: 22px;
+
+        font-weight: bold;
+        letter-spacing: 3px;
+      }
+    }
+
+    .about {
+      .container {
+        padding-right: 0;
+        padding-left: 0;
+      }
+
+      .description {
+        padding-bottom: 50px;
+      }
+
+      &-profile {
         padding-right: 15px;
-        padding-left: 15px;
+      }
 
-        flex: 0 calc(100%/3);
+      &-skills {
+        padding-top: 36px;
 
-        &:nth-child(odd) {
-          padding-right: 0;
+        h2 {
+          margin-bottom: 12px;
         }
+      }
 
-        &:nth-child(even) {
-          padding-left: 0;
+      &-button {
+        margin-top: 20px;
+
+        .ke-btn {
+          letter-spacing: 1.5px;
         }
       }
     }
 
-    .contact {
+    .services {
       .container {
-        max-width: 992px;
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+
+    .portfolio {
+      padding-bottom: 102px;
+
+      .portfolio-wrapper {
+        padding-right: 0;
+        padding-left: 0;
+        margin-top: -30px;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: -30px;
+      }
+      .portfolio-holder {
+        flex-basis: (100/3) * 1%;
+        padding-top: 30px;
+        padding-right: 0;
+        padding-left: 30px;
+        margin-bottom: 0;
+      }
+    }
+
+    .testimonials {
+      background-size: auto;
+
+      &.ke-section {
+        padding-top: 149px;
+        padding-bottom: 154px;
+      }
+
+      .testimonial-holder {
+        padding-top: 76px;
+        padding-bottom: 88px;
+      }
+
+      .testimonial-icon {
+        .testimonial-icon {
+          .ke-icon {
+            width: 40px;
+            height: 40px;
+
+            font-size: 16px;
+          }
+        }
+      }
+
+      .testimonial-message {
+        padding-right: 50px;
+        padding-left: 50px;
+      }
+
+      .testimonial-author {
+        font-size: 18px;
+      }
+
+      .author-position {
+        margin-top: 10px;
+
+        font-size: 14px;
+      }
+    }
+
+    .contact {
+      padding-bottom: 38px;
+
+      .container {
+        padding-right: 0;
+        padding-left: 0;
+        max-width: 900px;
+      }
+
+      .description {
+        padding-bottom: 44px;
+      }
+
+      .description-text {
+        padding: 15px 12px;
       }
 
       .ke-card-content {
         padding-right: 4px;
         padding-left: 4px;
+      }
+
+      .contact-form {
+        padding-top: 32px;
+        padding-right: 0;
+        padding-left: 0;
+      }
+
+      .ke-btn {
+        padding-right: 37px;
+        padding-left: 37px;
+        width: auto;
+
+        letter-spacing: 2px;
       }
     }
   }

@@ -41,3 +41,9 @@
   font-size: 14px;
   color: white;
 }
+
+@include respond-to(md-up) {
+  .ke-skill {
+    margin-bottom: 16px;
+  }
+}

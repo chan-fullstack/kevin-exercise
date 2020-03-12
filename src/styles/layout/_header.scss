@@ -19,6 +19,7 @@
   }
 
   .nav-link {
+    letter-spacing: 1px;
     color: #fff;
   }
 }
@@ -27,8 +28,21 @@
   background-color: #2d8686;
 }
 
-@include respond-to("sm-up") {
+@include respond-to(md-up) {
   .navbar {
-    padding: 28px 28px;
+    padding: 30px 28px;
+
+    .ke-logo {
+      height: 26px;
+    }
+  }
+
+  .navbar-expand-md {
+    .navbar-nav {
+      .nav-link {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+    }
   }
 }

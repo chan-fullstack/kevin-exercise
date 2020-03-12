@@ -31,3 +31,22 @@
 }
 
 
+@include respond-to(md-up) {
+  .description {
+    &-title {
+      margin-bottom: 18px;
+
+      font-size: 33px;
+      line-height: 1;
+    }
+
+    &-text {
+      padding: 15px 116px;
+
+      font-size: $content-font-size;
+      line-height: 1.5;
+    }
+  }
+}
+
+
