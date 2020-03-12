@@ -4,4 +4,8 @@
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
 
-@include font-face($font-opensans, $base-url + 'fonts/', 'opensans-regular', 'opensans-regular');
+@include font-face($font-opensans, $base-url + "fonts/", "OpenSans-Light", "OpenSans-Light", 300);
+@include font-face($font-opensans, $base-url + "fonts/", "OpenSans-Regular", "OpenSans-Regular", 400);
+@include font-face($font-opensans, $base-url + "fonts/", "OpenSans-SemiBold", "OpenSans-SemiBold", 600);
+@include font-face($font-opensans, $base-url + "fonts/", "OpenSans-Bold", "OpenSans-Bold", 700);
+@include font-face($font-opensans, $base-url + "fonts/", "OpenSans-ExtraBold", "OpenSans-ExtraBold", 800);

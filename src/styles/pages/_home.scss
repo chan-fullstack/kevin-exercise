@@ -8,6 +8,7 @@
   transition: all .2s ease-in-out;
 
   .hero {
+    padding-top: 60px;
     padding-bottom: 66px;
 
     text-align: center;
@@ -37,6 +38,7 @@
       padding-left: 15px;
 
       font-size: 15px;
+      font-weight: 300;
       color: #fff;
     }
 
@@ -136,24 +138,20 @@
 
     .portfolio-wrapper {
       display: flex;
-      padding-right: 15px;
-      padding-bottom: 12px;
-      padding-left: 15px;
+      margin-top: -30px;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: -30px;
 
       flex-flow: row wrap;
     }
 
     .portfolio-holder {
       flex-basis: (100/2) * 1%;
-      margin-bottom: 42px;
-
-      // &:nth-child(odd) {
-      //   padding-right: 20px;
-      // }
-
-      // &:nth-child(even) {
-      //   padding-left: 20px;
-      // }
+      padding-top: 30px;
+      padding-right: 0;
+      padding-left: 30px;
+      margin-bottom: 0;
     }
   }
 
@@ -203,7 +201,7 @@
       padding-top: 20px;
       padding-bottom: 20px;
 
-      font-size: 17px;
+      font-size: 16px;
       color: #fff;
     }
 
@@ -291,26 +289,38 @@
   }
 }
 
-
-@include respond-to(md-up) {
+@include respond-to(sm-up) {
   .home {
     .hero {
-      padding-top: 214px;
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+  }
+}
+
+
+@include respond-to(lg-up) {
+  .home {
+    .hero {
+      padding-top: 315px;
       padding-bottom: 318px;
 
       &-title {
-        font-size: 60px;
-        font-weight: bold;
+        font-size: 62px;
+        font-weight: 600;
+        line-height: 1;
       }
 
       &-subtitle {
-        font-size: 29px;
-        line-height: 46px;
+        font-size: 30px;
+        line-height: 48px;
       }
 
       &-content {
-        padding-right: 116px;
-        padding-left: 116px;
+        padding-right: 102px;
+        padding-left: 102px;
+
+        letter-spacing: 1px;
       }
 
       .ke-btn {
@@ -334,6 +344,7 @@
 
       &-profile {
         padding-right: 15px;
+        height: 100%;
       }
 
       &-skills {

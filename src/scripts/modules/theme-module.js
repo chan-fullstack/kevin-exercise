@@ -5,7 +5,7 @@ AppName.Modules.ThemeModule = (function () {
   //////////////////////
   // Private Methods //
   ////////////////////
-  var _initSwipers = function() {
+  var _initSwipers = function () {
     // private stuff
 
     var swiper = new Swiper('.testimonials-slider', {
@@ -17,18 +17,22 @@ AppName.Modules.ThemeModule = (function () {
 
   };
 
-  // var _changeNavbarBackground = function () {
-  //   $('.navbar-toggler').on('click', function () {
-  //     $('.navbar').toggleClass('ke-navbar-open');
-  //   });
-  // }
+  var _shrink_header = function () {
+    $(document).on("scroll", function () {
+      if ($(document).scrollTop() > 100) {
+        $(".navbar").addClass("ke-header-shrink");
+      } else {
+        $(".navbar").removeClass("ke-header-shrink");
+      }
+    });
+  }
 
   /////////////////////
   // Public Methods //
   ///////////////////
   var init = function () {
     _initSwipers();
-    // _changeNavbarBackground();
+    _shrink_header();
   };
 
   return {

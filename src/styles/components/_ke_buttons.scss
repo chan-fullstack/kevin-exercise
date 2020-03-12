@@ -4,7 +4,10 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 .ke-btn {
-  padding: 10px 12px;
+  padding-top: 10px;
+  padding-right: 12px;
+  padding-bottom: 10px;
+  padding-left: 12px;
 
   font-size: 12px;
   letter-spacing: 1px;
@@ -14,7 +17,7 @@
   border-style: solid;
 
   &-white {
-    @include button-color(#fff);
+    @include button-color($white);
   }
 
   &-green {
