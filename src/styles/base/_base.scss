@@ -84,14 +84,11 @@ textarea {
 @include placeholder() {
     opacity: .8;
   }
-
-  // @include on-event {
-  //     @include boxshadow(none);
-  //   }
 }
 
 textarea {
-  display: block; // removes bottom space  padding: 10px;
+  display: block;
+  padding: 10px;
   height: 184px;
 
   font-size: 16px;
@@ -113,7 +110,7 @@ textarea {
     width: 29px;
     height: 4px;
 
-    background: #fff;
+    background: $white;
 
 @include transition(.5s cubic-bezier(.65, .05, .36, 1));
 
