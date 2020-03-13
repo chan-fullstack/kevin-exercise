@@ -55,8 +55,23 @@
   .navbar-expand-md {
     .navbar-nav {
       .nav-link {
+        padding-right: 14px;
+        padding-left: 14px;
+
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@include respond-to(lg-up) {
+  .navbar-expand-md {
+    .navbar-nav {
+      .nav-link {
         padding-right: 15px;
         padding-left: 15px;
+
+        font-size: $content-font-size;
       }
     }
   }
