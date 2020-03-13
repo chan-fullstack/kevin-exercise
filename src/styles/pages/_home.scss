@@ -128,7 +128,7 @@
   }
 
   .portfolio {
-    padding-bottom: 68px;
+    padding-bottom: 120px;
 
     background-color: #f7f7f7;
 
@@ -138,19 +138,20 @@
 
     .portfolio-wrapper {
       display: flex;
-      margin-top: -30px;
+      padding: 0 15px;
+      margin-top: -40px;
       margin-right: 0;
       margin-bottom: 0;
-      margin-left: -30px;
+      margin-left: -40px;
 
       flex-flow: row wrap;
     }
 
     .portfolio-holder {
       flex-basis: (100/2) * 1%;
-      padding-top: 30px;
+      padding-top: 40px;
       padding-right: 0;
-      padding-left: 30px;
+      padding-left: 40px;
       margin-bottom: 0;
     }
   }
@@ -294,6 +295,13 @@
     .hero {
       padding-top: 200px;
       padding-bottom: 200px;
+    }
+
+    .contact {
+      .ke-card-content {
+        padding-right: 0;
+        padding-left: 0;
+      }
     }
   }
 }

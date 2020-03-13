@@ -47,7 +47,7 @@ a {
     width: 10px;
     height: 10px;
 
-    background: #fff;
+    background-color: $white;
 
     opacity: 1;
   }
@@ -91,7 +91,8 @@ textarea {
 }
 
 textarea {
-  padding: 10px;
+  display: block; // removes bottom space  padding: 10px;
+  height: 184px;
 
   font-size: 16px;
 }
