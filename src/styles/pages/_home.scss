@@ -86,7 +86,8 @@
         &:hover {
           color: #fff;
 
-          background-color: $header-text-color;
+          background-color: $brand-color;
+          border-color: $brand-color;
         }
       }
     }
